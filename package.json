@@ -1,0 +1,16 @@
+{
+  "name": "pi-context-whisperer",
+  "version": "1.0.0",
+  "description": "Smart gradual auto-compaction for Pi — summarizes conversation mid-session before context limits hit, preserving key decisions",
+  "keywords": ["pi-package", "pi-extension", "context", "compaction", "auto-summarize", "token-management"],
+  "author": { "name": "Jay Rathod", "url": "https://github.com/Jaraxxxx" },
+  "repository": { "type": "git", "url": "https://github.com/Jaraxxxx/pi-context-whisperer" },
+  "license": "MIT",
+  "type": "module",
+  "pi": { "extensions": ["./index.ts"] },
+  "peerDependencies": {
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  }
+}
