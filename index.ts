@@ -257,7 +257,7 @@ export default function (pi: ExtensionAPI) {
     name: "context_health",
     description: "Check current context window usage percentage and token counts. Use when concerned about approaching limits.",
     parameters: { type: "object", properties: {} },
-    async handler(_args: any, ctx: any) {
+    async execute(_toolCallId: any, _args: any, _signal: any, _onUpdate: any, ctx: any) {
       const cu = (ctx as any).getContextUsage?.();
       if (!cu || cu.percent == null) return "Context usage data not available yet.";
       const status =
